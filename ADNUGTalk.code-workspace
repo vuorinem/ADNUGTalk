@@ -1,7 +1,16 @@
 {
 	"folders": [
 		{
+			"name": "Examples",
 			"path": "./Examples/aurelia-app"
+		},
+		{
+			"name": "Aurelia 2",
+			"path": "Examples/aurelia-2"
+		},
+		{
+			"name": "Custom Skeleton",
+			"path": "Examples/aurelia-custom-skeleton"
 		}
 	],
 	"settings": {}
