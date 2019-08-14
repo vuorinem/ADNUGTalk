@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Aurelia Script Example</title>
+</head>
+
+<body>
+    <h1>Aurelia Script Example</h1>
+    <secion id="content">
+        <p>Static Content</p>
+    </secion>
+    <script src='https://unpkg.com/aurelia-script@1.5.2'></script>
+    <script>
+        const { InlineViewStrategy } = au;
+        const aurelia = new au.Aurelia();
+
+        aurelia.use
+            .standardConfiguration()
+            .developmentLogging();
+
+        aurelia.start()
+            .then(() => aurelia.setRoot(
+                class DynamicButton {
+                    message = "Dynamic";
+
+                    cycleMessage() {
+                        if (this.message === 'Dynamic') {
+                            this.message = 'Awesome';
+                        } else {
+                            this.message = 'Dynamic';
+                        }
+                    }
+
+                    getViewStrategy() {
+                        return new InlineViewStrategy(`
+                        <template>
+                            <p>\${message} content</p>
+                            <button click.delegate="cycleMessage()">Change</button>
+                        </template>
+                        `);
+                    }
+                },
+                document.getElementById('content')));
+    </script>
+</body>
+
+</html>
