@@ -25,6 +25,12 @@ export class App {
         name: 'events-dom',
         moduleId: PLATFORM.moduleName('./views/events-dom'),
         title: 'title'
+      },
+      {
+        route: 'events-pubsub',
+        name: 'events-pubsub',
+        moduleId: PLATFORM.moduleName('./views/events-pubsub'),
+        title: 'title'
       }
     ]);
   }

@@ -1262,7 +1262,7 @@ aurelia-dependency-injection@^1.0.0, aurelia-dependency-injection@^1.3.0, aureli
     aurelia-metadata "^1.0.0"
     aurelia-pal "^1.0.0"
 
-aurelia-event-aggregator@^1.0.0:
+aurelia-event-aggregator@^1.0.0, aurelia-event-aggregator@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/aurelia-event-aggregator/-/aurelia-event-aggregator-1.0.3.tgz#80332d539a7fb680a031c4363cb1fea5ea2b8dbd"
   integrity sha512-8fSWNCgh3gIsq/MgE+njVnUlYS05D6acyC8aJECekNWYecdBz46ckEblywP1ZNHLIt3u/Ws0oMqiOp1Jjw+0hw==

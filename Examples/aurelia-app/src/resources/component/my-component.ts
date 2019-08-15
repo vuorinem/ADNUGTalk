@@ -1,6 +1,7 @@
-import { bindable, bindingMode } from "aurelia-framework";
+import { bindable, bindingMode, ComponentAttached, ComponentBind } from "aurelia-framework";
 
-export class MyComponent {
+export class MyComponent implements ComponentAttached, ComponentBind {
+  
   @bindable private name: string;
 
   // One-time bindables will not create ovbservers
@@ -12,4 +13,12 @@ export class MyComponent {
   private moods = [
     'Happy', 'Sad', 'Tired'
   ];
+
+  public bind(bindingContext: any, overrideContext: any) {
+    alert('Bind');
+  }
+
+  public attached() {
+    alert('Attached');
+  }
 }
