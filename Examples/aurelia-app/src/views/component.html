@@ -1,0 +1,7 @@
+<template>
+  <p>Name: <input type="text" value.bind="name" /></p>
+
+  <my-component name.bind="name" day="Thursday" my-mood.bind="mood"></my-component>
+
+  <p>${ name } is ${ mood }</p>
+</template>

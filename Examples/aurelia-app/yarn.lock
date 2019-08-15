@@ -1404,7 +1404,7 @@ aurelia-route-recognizer@^1.3.2:
   dependencies:
     aurelia-path "^1.0.0"
 
-aurelia-router@^1.5.0:
+aurelia-router@^1.5.0, aurelia-router@^1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/aurelia-router/-/aurelia-router-1.7.1.tgz#b9eae915d43c478d949caca1ed261afe832d5686"
   integrity sha512-P6xxikeHHzVLxpZD8tvTwGJmEHY3M1MPTiIYzk32s85scd4kQ77FgQWo77ujYNv6hjrExifLFbrxIB7pUEziIQ==

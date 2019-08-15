@@ -1,0 +1,14 @@
+<template>
+  <require from="./my-component.css"></require>
+
+  <p>
+    <strong>My Component</strong><br />
+
+    Hello ${ name }, it's ${ day }, and you are
+    <select value.bind="myMood">
+      <option repeat.for="mood of moods" mdoel.bind="mood">${ mood }</option>
+    </select>
+
+    ${mood}
+  </p>
+</template>
