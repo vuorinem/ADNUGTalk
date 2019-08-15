@@ -19,6 +19,12 @@ export class App {
         name: 'component',
         moduleId: PLATFORM.moduleName('./views/component'),
         title: 'title'
+      },
+      {
+        route: 'events-dom',
+        name: 'events-dom',
+        moduleId: PLATFORM.moduleName('./views/events-dom'),
+        title: 'title'
       }
     ]);
   }

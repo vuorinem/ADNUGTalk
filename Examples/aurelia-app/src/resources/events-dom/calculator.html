@@ -1,0 +1,15 @@
+<template>
+  <p>
+    ${ numberA } + ${ numberB } = <input type="number" value.bind="answer" />
+
+    <button click.delegate="onCheck()">Check</button>
+
+    <br />
+
+    Current score: ${ score }
+
+    <br />
+
+    <button click.delegate="onComplete()">I'm Done</button>
+  </p>
+</template>
