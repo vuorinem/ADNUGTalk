@@ -11,15 +11,20 @@
     </secion>
     <script src='https://unpkg.com/aurelia-script@1.5.2'></script>
     <script>
+        // "Import" aurelia components
         const { InlineViewStrategy } = au;
         const aurelia = new au.Aurelia();
 
+        // Configure Aurelia
         aurelia.use
             .standardConfiguration()
             .developmentLogging();
 
+        // Bootstrap application with Aurelia
         aurelia.start()
             .then(() => aurelia.setRoot(
+                // Define inline component as the root
+                // (this is normally a reference to external file like app.js)
                 class DynamicButton {
                     message = "Dynamic";
 
@@ -40,6 +45,7 @@
                         `);
                     }
                 },
+                // Specify the element where Aurelia will be hosted in
                 document.getElementById('content')));
     </script>
 </body>

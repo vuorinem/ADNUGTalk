@@ -45,3 +45,21 @@
   dependencies like fetch-client, bootstrap and jquery
   already added and configured in `webpack.config`
   
+  ### Aurelia script
+
+  - Open [./Examples/aurelia-script/index.html](Examples/aurelia-script/index.html) in VS Code and in Chrome
+  - Go through comments in code
+
+  ## Examples
+
+  ### Component
+
+  - TODO
+
+  ### Events (DOM)
+
+  - TODO
+
+  ### Events (Pub/Sub)
+
+  - TODO
